@@ -2,15 +2,7 @@
 using cumulative_project_1.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Numerics;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Web.Http;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace cumulative_project_1.Controllers
 {
@@ -50,7 +42,7 @@ namespace cumulative_project_1.Controllers
                 
                 int ClassID = (int)ResultSet["classid"];
                 string ClassCode = ResultSet["classcode"].ToString();
-                int TeacherID = (int)(long)ResultSet["teacherid"]; 
+                int TeacherID = (int)ResultSet["teacherid"]; 
                 DateTime StartDate = (DateTime)ResultSet["startdate"];
                 DateTime EndDate = (DateTime)ResultSet["finishdate"];
                 string ClassName = ResultSet["classname"].ToString();
@@ -100,7 +92,7 @@ namespace cumulative_project_1.Controllers
                 
                 int ClassID = (int)ResultSet["classid"];
                 string ClassCode = ResultSet["classcode"].ToString();
-                int TeacherID = (int)(long)ResultSet["teacherid"]; 
+                int TeacherID = (int)ResultSet["teacherid"]; 
                 DateTime StartDate = (DateTime)ResultSet["startdate"];
                 DateTime EndDate = (DateTime)ResultSet["finishdate"];
                 string ClassName = ResultSet["classname"].ToString();
